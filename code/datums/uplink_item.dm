@@ -184,10 +184,10 @@ var/list/uplink_items = list()
 	jobs = list("Chaplain")
 
 //BARTENDER
-/datum/uplink_item/job_specific/buckshot
-	name = "12g Buckshot Shell"
-	desc = "Buckshot shells fire 5 pellets that will spread in the direction you are shooting. They can be loaded into your double-barreled shotgun. Absolutely devastating point-blank."
-	item = /obj/item/ammo_casing/shotgun/buckshot
+/datum/uplink_item/job_specific/shotgunammo
+	name = "Shotgun ammo kit"
+	desc = "An assortment of various syndicate approved shotgun shells."
+	item = /obj/item/weapon/storage/box/syndie_kit/shotguntender
 	cost = 5
 	jobs = list("Bartender")
 
@@ -971,7 +971,7 @@ var/list/uplink_items = list()
 /datum/uplink_item/device_tools/encryptionkey
 	name = "Syndicate Encryption Key"
 	desc = "A key that, when inserted into a radio headset, allows you to listen to all station department channels as well as talk on an encrypted Syndicate channel with other agents that have the same \
-	key."
+	key. Use :t to utilize syndicate chat."
 	item = /obj/item/device/encryptionkey/syndicate
 	cost = 2 //Nowhere near as useful as the Binary Key!
 	surplus = 75
